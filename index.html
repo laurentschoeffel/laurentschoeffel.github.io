@@ -1,134 +1,485 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Laurent Schoeffel | Page personnelle</title>
+  <title>Laurent Schoeffel | Senior Research Scientist</title>
+  <meta name="description" content="Academic Curriculum Vitae of Laurent Schoeffel, Senior Research Scientist at CEA-Saclay (Irfu / DPhP).">
   <style>
     :root {
-      --bg: #f8fafc;
-      --card-bg: #ffffff;
-      --text: #1e293b;
-      --text-muted: #64748b;
-      --accent: #0f4c81;
-      --border: #e2e8f0;
-      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --primary: #0F2C59;
+      --accent: #1B4965;
+      --soft: #62B6CB;
+      --text: #1F242E;
+      --text-muted: #526173;
+      --bg: #F8FAFC;
+      --card-bg: #FFFFFF;
+      --border: #E2E8F0;
+      --rule: #0F2C59;
+      --font-body: "EB Garamond", "Garamond", "Georgia", serif;
+      --font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
-      font-family: var(--font);
+      font-family: var(--font-body);
       background-color: var(--bg);
       color: var(--text);
-      line-height: 1.65;
-      padding: 40px 20px;
+      line-height: 1.6;
+      font-size: 1.06rem;
+      padding: 40px 16px;
     }
 
     .container {
-      max-width: 780px;
+      max-width: 860px;
       margin: 0 auto;
       background: var(--card-bg);
-      padding: 48px;
-      border-radius: 12px;
+      padding: 56px 64px;
+      border-radius: 8px;
       border: 1px solid var(--border);
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
     }
 
+    @media (max-width: 768px) {
+      body { padding: 16px 8px; }
+      .container { padding: 32px 20px; }
+    }
+
+    /* Header */
     header {
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 24px;
+      text-align: center;
       margin-bottom: 32px;
+      padding-bottom: 20px;
     }
 
-    h1 { font-size: 2rem; color: var(--text); margin-bottom: 6px; }
-    .subtitle { font-size: 1.1rem; color: var(--accent); font-weight: 500; }
-    
-    section { margin-bottom: 32px; }
-    h2 {
+    h1 {
+      font-size: 2.2rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 4px;
+      font-weight: 700;
+    }
+
+    .title-subtitle {
       font-size: 1.25rem;
-      color: var(--text);
-      margin-bottom: 12px;
-      border-left: 3px solid var(--accent);
-      padding-left: 10px;
+      font-style: italic;
+      color: var(--accent);
+      margin-bottom: 6px;
     }
 
-    p { margin-bottom: 14px; color: #334155; }
-    ul { list-style: none; padding-left: 0; }
-    li {
-      padding: 10px 0;
-      border-bottom: 1px solid var(--border);
+    .affiliation {
+      font-size: 0.98rem;
+      color: var(--text);
+      margin-bottom: 8px;
     }
-    li:last-child { border-bottom: none; }
+
+    .contact-links {
+      font-family: var(--font-ui);
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px 14px;
+      margin-bottom: 6px;
+    }
+
+    .meta-info {
+      font-family: var(--font-ui);
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
 
     a {
       color: var(--accent);
       text-decoration: none;
+      transition: color 0.15s ease;
     }
-    a:hover { text-decoration: underline; }
 
-    .meta { font-size: 0.9rem; color: var(--text-muted); }
-    .links-bar {
-      display: flex;
-      gap: 16px;
+    a:hover {
+      text-decoration: underline;
+      color: var(--primary);
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      border-bottom: 1.5px solid var(--rule);
+      padding-bottom: 4px;
+      margin-top: 24px;
+      margin-bottom: 12px;
+    }
+
+    h3 {
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: var(--accent);
       margin-top: 16px;
+      margin-bottom: 8px;
+    }
+
+    /* Lists */
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      position: relative;
+      padding-left: 1.4em;
+      margin-bottom: 8px;
+    }
+
+    li::before {
+      content: "◆";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-size: 0.75rem;
+      top: 0.25em;
+    }
+
+    ul ul {
+      margin-top: 6px;
+      margin-bottom: 4px;
+    }
+
+    ul ul li {
+      padding-left: 1.4em;
+      margin-bottom: 6px;
+    }
+
+    ul ul li::before {
+      content: "▪";
+      position: absolute;
+      left: 0.2em;
+      color: var(--soft);
+      font-size: 0.75rem;
+      top: 0.25em;
+    }
+
+    .highlight-blue {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .pub-desc {
       font-size: 0.95rem;
+      color: #374151;
+      margin-top: 3px;
+      line-height: 1.5;
+    }
+
+    .publication-item {
+      margin-bottom: 14px;
+    }
+
+    /* Philosophy section */
+    .philosophy-text {
+      font-style: italic;
+      line-height: 1.7;
+      text-align: justify;
+      color: #2b3340;
+    }
+
+    .philosophy-text p {
+      margin-bottom: 14px;
+      text-indent: 1.5em;
+    }
+
+    .philosophy-text p:first-of-type {
+      text-indent: 0;
+    }
+
+    .tag-highlight {
+      background: #eef4f8;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-family: var(--font-ui);
+      font-size: 0.85rem;
+      color: var(--accent);
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
+  <main class="container">
+    <!-- Header -->
     <header>
       <h1>Laurent Schoeffel</h1>
-      <div class="subtitle">Physique théorique & Mathématiques appliquées</div>
-      <div class="links-bar">
-        <a href="https://scipost.org/contributor/3704" target="_blank">SciPost</a>
-        <span>•</span>
-        <a href="https://arxiv.org" target="_blank">arXiv</a>
-        <span>•</span>
-        <a href="mailto:votre-email@exemple.com">Contact</a>
+      <div class="title-subtitle">Senior Research Scientist</div>
+      <div class="affiliation">Department of Particle Physics (Irfu / DPhP) &bull; CEA-Saclay, France</div>
+      <div class="contact-links">
+        <span>Email: <a href="mailto:laurent.schoeffel@cea.fr">laurent.schoeffel@cea.fr</a></span>
+        <span>&bull;</span>
+        <span>INSPIRE-HEP: <a href="https://inspirehep.net/authors/1018274" target="_blank" rel="noopener noreferrer">Laurent.Schoeffel.1</a></span>
+        <span>&bull;</span>
+        <span>ORCID: <a href="https://orcid.org/0000-0002-8081-2353" target="_blank" rel="noopener noreferrer">0000-0002-8081-2353</a></span>
+      </div>
+      <div class="meta-info">
+        DoB: April 23, 1970 &bull; CEA Entry: October 1, 1998
       </div>
     </header>
 
+    <!-- Key Highlights -->
     <section>
-      <h2>À propos</h2>
-      <p>
-        Présentation biographique, parcours de recherche et fonctions actuelles. 
-        Vous pouvez rédiger ici un paragraphe synthétique présentant vos thèmes majeurs.
-      </p>
-    </section>
-
-    <section>
-      <h2>Thèmes de recherche</h2>
+      <h2>Key Highlights &amp; Track Record</h2>
       <ul>
-        <li><strong>Mécanique des fluides :</strong> Équations de Navier-Stokes, régularité et turbulence.</li>
-        <li><strong>Électrodynamique quantique & matière :</strong> Domaines de cohérence, électrodynamique quantique (QED) appliquée aux milieux continus.</li>
-        <li><strong>Physique des hautes énergies :</strong> Phénoménologie et physique théorique.</li>
+        <li>
+          <strong>ATLAS Collaboration Leadership:</strong> Served as the <strong>QCD and Diffraction Physics Group Coordinator</strong> within the ATLAS Experiment (October 2014 &ndash; 2016), leading a group of ~150 international physicists across data analysis, triggers, and forward detector upgrades.
+        </li>
+        <li>
+          <strong>DESY H1 Collaboration Leadership:</strong> Coordinated the QCD and Diffractive Physics Working Group during the H1 experiment era at HERA.
+        </li>
+        <li>
+          <strong>High Citation Impact &amp; Authorship Record:</strong>
+          <ul>
+            <li>
+              <span class="highlight-blue">Direct Leadership &amp; Output:</span> Over <strong>50 publications as primary/lead author</strong>, key analyzer, or theoretical contributor (within a global track record of 500+ collaboration papers, <em>h</em>-index &gt; 100 on INSPIRE-HEP).
+            </li>
+            <li>
+              <span class="highlight-blue">Over 1,500 cumulative citations</span> on the GPD and nucleon tomography research program (anchored by the landmark <em>Phys. Lett. B 2009</em> paper, &gt;950 citations, and synthesized in my HDR monograph, <em>Prog. Part. Nucl. Phys.</em> 2010).
+            </li>
+            <li>
+              <span class="highlight-blue">Over 900 citations</span> across lead ATLAS photon-photon and light-by-light discovery analyses.
+            </li>
+            <li>
+              <span class="highlight-blue">Over 650 citations</span> on the H1 inclusive diffraction reference paper (<em>EPJC</em>, 2012).
+            </li>
+          </ul>
+        </li>
       </ul>
     </section>
 
+    <!-- Professional Experience -->
     <section>
-      <h2>Publications & Prépublications récentes</h2>
+      <h2>Professional Experience</h2>
       <ul>
         <li>
-          <div><strong>Titre d'un article ou prépublication</strong></div>
-          <div class="meta">Revue / arXiv, Année — <a href="#">Consulter le papier (PDF)</a></div>
+          <strong>2010 &ndash; Present: Senior Research Scientist</strong> &bull; <span class="highlight-blue">ATLAS Experiment (LHC), CERN</span>
+          <ul>
+            <li>Research focus: Quantum Chromodynamics (QCD), photon-photon physics, and exclusive processes.</li>
+          </ul>
         </li>
         <li>
-          <div><strong>Autre article de recherche</strong></div>
-          <div class="meta">Revue / Conférence, Année — <a href="#">Lien vers la publication</a></div>
+          <strong>1998 &ndash; 2010: Research Scientist</strong> &bull; <span class="highlight-blue">H1 Experiment (HERA), DESY</span>
+          <ul>
+            <li>Research focus: Deep Inelastic Scattering (DIS), Generalized Parton Distributions (GPDs), and Nucleon Tomography (extended to TMDs in 2021/2022).</li>
+            <li>Served as the <strong>QCD and Diffractive Physics Working Group Coordinator</strong>.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>2000 &ndash; 2006: Research Scientist</strong> &bull; <span class="highlight-blue">EDELWEISS Experiment, Modane Underground Lab</span>
+          <ul>
+            <li>Research focus: Preparation, validation of cryogenic heat-and-ionization Ge detectors (bolometers) and low-background data analysis.</li>
+          </ul>
         </li>
       </ul>
     </section>
 
+    <!-- Academic Leadership, Teaching & Mentoring -->
     <section>
-      <h2>Contact</h2>
-      <p>
-        Laboratoire / Institution<br>
-        Courriel : <a href="mailto:votre-email@exemple.com">votre-email@exemple.com</a>
-      </p>
+      <h2>Academic Leadership, Teaching &amp; Mentoring</h2>
+      <ul>
+        <li>
+          <strong>Doctoral Mentorship &amp; Graduate Guidance:</strong>
+          <ul>
+            <li><strong>Independent PhD Mentor &amp; Liaison:</strong> Dedicated mentor for 5&ndash;6 PhD students within the ATLAS CEA research group, providing independent academic guidance, thesis-writing support, and pastoral care.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>École Polytechnique Entrance Examination</strong> <em>(Competitive nationwide STEM Concours):</em>
+          <ul>
+            <li><strong>2016 &ndash; Present:</strong> Appointed Oral Examiner in Physics (Main French STEM concours board).</li>
+            <li><strong>Last 5 years (2021 &ndash; Present):</strong> Appointed Oral Examiner for the International University Track (<em>Filière Universitaire Internationale &ndash; FUI</em>), conducting admissions interviews and examinations for candidates across the <strong>Asia&ndash;Oceania zone</strong>.</li>
+            <li><strong>2002 &ndash; 2014:</strong> Written Exam Grader and Script Reviewer (Physics Board).</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Higher Education Teaching &amp; Advanced Lecture Series:</strong>
+          <ul>
+            <li><strong>2026:</strong> Invited Advanced Lecture Series, <strong>Mohammed V University of Rabat</strong> (Morocco): Multihour graduate course entitled <em>«&nbsp;La nature aime à se cacher&nbsp;»</em> (delivered in French).</li>
+            <li><strong>2024 &ndash; Present:</strong> Lecturer in Statistical Physics, <strong>ENSTA Paris</strong> (Institut Polytechnique de Paris). Appointed to direct the <strong>Quantum Field Theory (QFT)</strong> course series for a 5-year term (starting 2027).</li>
+            <li><strong>2016:</strong> Course Lecturer, <em>Lectures on electromagnetic processes and light-by-light scattering at the LHC</em> (6-week intensive graduate course), CEA Saclay.</li>
+            <li><strong>2010:</strong> Guest Lecturer, <strong>EPFL</strong> (École Polytechnique Fédérale de Lausanne, Switzerland): Advanced graduate course series on stochastic processes and intermittency (<em>Processus stochastiques et intermittence</em>).</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Doctoral Thesis Supervision:</strong> Supervisor / Co-advisor for <strong>6 PhD theses</strong> in France and internationally. Ongoing co-supervision: Ms. Malak Ait Tamlihat (Mohammed V University, Rabat). <strong>100%</strong> of past supervised PhD graduates secured permanent academic or research positions shortly after graduation.
+        </li>
+      </ul>
     </section>
-  </div>
+
+    <!-- Professional Responsibilities & Service -->
+    <section>
+      <h2>Professional Responsibilities &amp; Service</h2>
+      <ul>
+        <li><strong>Editorial Board &amp; Topical Volumes (MDPI):</strong> Editorial Board (EB) member for MDPI journals. Guest Editor and organizer of specialized journal volumes focusing on Quantum Field Theory (QFT), Fluid Mechanics, Symmetry &amp; Topology, and mathematical physics.</li>
+        <li><strong>Conference Organization:</strong> Member of the International Organizing Committee for <em>Moriond QCD</em> (since 2010).</li>
+        <li><strong>Session Coordination:</strong> Convener/coordinator for multiple physics sessions at international conferences since 2008.</li>
+        <li><strong>International Projects:</strong> Principal Investigator for the <em>Polonium</em> contract with the Jagiellonian University of Krakow (2012&ndash;2014).</li>
+        <li><strong>Reviewing Duties:</strong> Grant proposal reviewer for the <em>National Science Center</em> (Poland) since 2010; Internal reviewer for CEA research proposals; Ad hoc referee for international peer-reviewed physics journals.</li>
+        <li><strong>PhD &amp; HDR Examination Committees:</strong> Appointed referee (<em>rapporteur</em>) and defense jury member for doctoral dissertations and Habilitation theses across French and European universities.</li>
+      </ul>
+    </section>
+
+    <!-- Community Outreach & Volunteering -->
+    <section>
+      <h2>Community Outreach &amp; Volunteering</h2>
+      <ul>
+        <li><strong>Weekend Volunteer Academic Tutor:</strong> Provide ongoing pedagogical support, literature, mathematics, and physics tutoring in a community association for students of all levels, ranging from secondary schools to competitive STEM preparatory classes (<em>Classes Préparatoires aux Grandes Écoles</em> / CPGE).</li>
+        <li><strong>Advanced CPGE Lecture Course:</strong> Designed and taught a specialized course entitled <em>«&nbsp;Groupes et Représentations pour la Physique&nbsp;»</em> intended for CPGE MP* students (Lycée Louis-le-Grand standard), accompanied by a comprehensive, fully written 200-page lecture monograph (<em>polycopié</em> of 200 pages available upon request).</li>
+      </ul>
+    </section>
+
+    <!-- Education & Academic Credentials -->
+    <section>
+      <h2>Education &amp; Academic Credentials</h2>
+      <ul>
+        <li>
+          <strong>2009: Habilitation to Direct Research (HDR)</strong> &bull; <em>Université Paris XI &ndash; Orsay</em><br>
+          Published as a review monograph: <em>Prog. Part. Nucl. Phys. 65 (2010) 9-49</em>, <a href="https://arxiv.org/abs/0908.3287" target="_blank" rel="noopener noreferrer">arXiv:0908.3287</a> (synthesizing a core research corpus gathering <span class="highlight-blue">&gt;1,500 cumulative citations</span> on GPDs and nucleon structure).
+        </li>
+        <li>
+          <strong>1995 &ndash; 1997: PhD in Particle Physics</strong> &bull; <em>Université Paris XI &ndash; Orsay</em><br>
+          Thesis: <em>Proton structure function F<sub>2</sub> in the H1 experiment and QCD fits</em> (Advisor: Joël Feltesse).
+        </li>
+        <li>
+          <strong>1990 &ndash; 1995: École Normale Supérieure (ENS Paris)</strong><br>
+          Alumnus; passed the competitive national <em>Agrégation</em> in Physics (1993). Ranked <strong>4<sup>th</sup></strong> in the final ENS Physics graduation examination board (oral examination with Serge Haroche).
+        </li>
+        <li>
+          <strong>1988 &ndash; 1990: Classes Préparatoires</strong> &bull; <em>Lycée Louis-le-Grand, Paris</em>.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Recent & Selected Publications -->
+    <section>
+      <h2>Recent &amp; Selected Publications</h2>
+
+      <h3>Recent Theoretical &amp; Phenomenological Works (2026)</h3>
+      <ul>
+        <li class="publication-item">
+          <strong>M. Ait Tamlihat, G. Ez-Zobayr, L. Schoeffel, Y. Tayalati</strong>,<br>
+          <em>« Searches for extra-dimensional excitations in light-by-light scattering »</em>,<br>
+          <strong>Journal of High Energy Physics (JHEP)</strong> (2026), <a href="https://arxiv.org/abs/2601.03110" target="_blank" rel="noopener noreferrer">arXiv:2601.03110</a>.
+        </li>
+        <li class="publication-item">
+          <strong>M. Ait Tamlihat, G. Ez-Zobayr, L. Schoeffel, Y. Tayalati</strong>,<br>
+          <em>« Relativistic Vorticity in the Quark-Gluon Plasma: Symmetries, Explosive Dilution, and Azimuthal Spin Alignment »</em>,<br>
+          <a href="https://arxiv.org/abs/2607.03716" target="_blank" rel="noopener noreferrer">arXiv:2607.03716</a> (submitted, 2026).
+          <div class="pub-desc">
+            Investigates the dynamics and survival of relativistic vorticity in non-central heavy-ion collisions, where initial orbital angular momentum generates the most vortical fluid known in nature (&omega; ~ 10<sup>21</sup> s<sup>&minus;1</sup>). Analyzes how explosive hydrodynamic expansion and thermal dilution compete with local symmetry breaking and spin-orbit coupling, providing a quantitative framework to explain the non-trivial azimuthal polarization and spin alignment of &Lambda; and <span style="text-decoration: overline;">&Lambda;</span> hyperons at RHIC and LHC.
+          </div>
+        </li>
+        <li class="publication-item">
+          <strong>M. Ait Tamlihat, G. Ez-Zobayr, L. Schoeffel, Y. Tayalati</strong>,<br>
+          <em>« Relativistic Hydrodynamics and Vorticity Dynamics in High-Energy Heavy-Ion Collisions: A Collective Flow Perspective »</em>,<br>
+          <a href="https://arxiv.org/abs/2607.04273" target="_blank" rel="noopener noreferrer">arXiv:2607.04273</a> (submitted, 2026).
+          <div class="pub-desc">
+            Formulates a 3D relativistic viscous hydrodynamic framework modeling vortex ring formation, shear-induced vorticity, and turbulent cascades in the expanding nuclear fireball. Links thermal vorticity gradients to collective flow observables and anisotropic harmonic coefficients (<em>v<sub>n</sub></em>), demonstrating that relativistic vorticity serves as a fine probe of the QGP transport coefficients, equation of state, and initial geometry.
+          </div>
+        </li>
+      </ul>
+
+      <h3>Work in Progress &amp; Advanced Working Papers</h3>
+      <ul>
+        <li class="publication-item">
+          <strong>L. Schoeffel</strong>,<br>
+          <em>« Beyond the Point-Mass Limit: Scale Symmetry and Physical Regularization of 3D Incompressible Flows via an Anisotropic Parcel Model »</em>,<br>
+          <em>Finalized manuscript, under submission.</em>
+          <div class="pub-desc">
+            Physical regularization of 3D incompressible Navier-Stokes equations restoring a finite hydrodynamic parcel scale (covolume) and an anisotropic strain tensor. Demonstrates that breaking the point-mass limit reduces quadratic vortex stretching to a bounded linear process, securing an exponential bound on enstrophy and precluding finite-time singularities.
+          </div>
+        </li>
+        <li class="publication-item">
+          <strong>L. Schoeffel</strong>,<br>
+          <em>« Quantum Electrodynamics of Liquid Water: From Phase Locking to Spontaneous Symmetry Breaking »</em>,<br>
+          <em>Finalized manuscript, under completion.</em>
+          <div class="pub-desc">
+            Macroscopic QFT framework for liquid water based on spontaneous <em>U</em>(1) gauge symmetry breaking and vacuum phase-locking. Solves the 300 K thermal stability paradox via Flory-Huggins entropic scaling and establishes a one-to-one correspondence between IR-pumped Coherence Domains (CD/NESS) and Exclusion Zone (EZ) interfacial water.
+          </div>
+        </li>
+        <li class="publication-item">
+          <strong>L. Schoeffel</strong>,<br>
+          <em>« Stability, Instability, and Interfacial Dynamics of QED Coherence Domains in Open Aqueous Systems »</em>,<br>
+          <em>Working paper in preparation.</em>
+          <div class="pub-desc">
+            Spatio-temporal Ginzburg-Landau boundary theory for open CDs, incorporating Debye plasma screening (Anderson-Higgs mechanism) and electro-mechanical stress balance (Maxwell stress vs. osmotic pressure). Applications to interfacial rheology, membrane action potentials, and non-dissipative proton transport.
+          </div>
+        </li>
+      </ul>
+
+      <h3>Core Experimental &amp; Landmark Contributions</h3>
+      <ul>
+        <li class="publication-item">
+          <strong>Light-by-Light Scattering in Pb-Pb Collisions (ATLAS Collaboration):</strong><br>
+          <em>(Analysis initiator, co-lead analyzer, and publication contact)</em><br>
+          <em>Nature Phys.</em> 13 (2017) 852 [<a href="https://arxiv.org/abs/1702.01625" target="_blank" rel="noopener noreferrer">arXiv:1702.01625</a>]; 
+          <em>Phys. Rev. Lett.</em> 123 (2019) 052001 [<a href="https://arxiv.org/abs/1904.03536" target="_blank" rel="noopener noreferrer">arXiv:1904.03536</a>]; 
+          <em>JHEP</em> 03 (2021) 243 [<a href="https://arxiv.org/abs/2008.05355" target="_blank" rel="noopener noreferrer">arXiv:2008.05355</a>].<br>
+          <span class="highlight-blue">Key impact: Over 550 citations</span> establishing the first direct experimental observation of light-by-light scattering at high energy.
+        </li>
+        <li class="publication-item">
+          <strong>Exclusive Photon-Photon Processes (ATLAS Collaboration):</strong><br>
+          <em>(Lead analyzer and physics contact)</em><br>
+          <em>Phys. Rev. D</em> 94 (2016) 032011 [<a href="https://arxiv.org/abs/1607.03745" target="_blank" rel="noopener noreferrer">arXiv:1607.03745</a>]; 
+          <em>Phys. Lett. B</em> 761 (2016) 158 [<a href="https://arxiv.org/abs/1607.06605" target="_blank" rel="noopener noreferrer">arXiv:1607.06605</a>]; 
+          <em>Phys. Lett. B</em> 749 (2015) 242 [<a href="https://arxiv.org/abs/1506.07098" target="_blank" rel="noopener noreferrer">arXiv:1506.07098</a>].<br>
+          <span class="highlight-blue">Key impact: Over 550 citations</span>.
+        </li>
+        <li class="publication-item">
+          <strong>H1 Collaboration Baseline Reference Papers (HERA):</strong><br>
+          <em>(Lead analyzer and working group convener)</em><br>
+          <em>EPJC</em> 72 (2012) 2074 [<a href="https://arxiv.org/abs/1203.4495" target="_blank" rel="noopener noreferrer">arXiv:1203.4495</a>] (<span class="highlight-blue">&gt;650 citations</span>);<br>
+          <em>Phys. Lett. B</em> 681 (2009) 391 [<a href="https://arxiv.org/abs/0907.5289" target="_blank" rel="noopener noreferrer">arXiv:0907.5289</a>] (<span class="highlight-blue">&gt;950 citations</span>, fundamental benchmark for EIC and CEBAF nucleon structure programs).
+        </li>
+      </ul>
+
+      <h3>Key Theoretical &amp; Phenomenological Landmarks</h3>
+      <ul>
+        <li><em>Phys. Lett. B</em> 846 (2023) 138237 [<a href="https://arxiv.org/abs/2306.15558" target="_blank" rel="noopener noreferrer">arXiv:2306.15558</a>] (Massive gravitons coupling to photons).</li>
+        <li><em>Prog. Part. Nucl. Phys.</em> 120 (2021) 103889 [<a href="https://arxiv.org/abs/2010.07855" target="_blank" rel="noopener noreferrer">arXiv:2010.07855</a>] (Photon-photon physics at LHC &amp; high-power lasers).</li>
+        <li><em>Phys. Lett. B</em> 795 (2019) 339 [<a href="https://arxiv.org/abs/1903.04151" target="_blank" rel="noopener noreferrer">arXiv:1903.04151</a>] (Axion-like particles constraints via light-by-light scattering).</li>
+        <li><em>Phys. Lett. B</em> 741 (2015) 66 [<a href="https://arxiv.org/abs/1410.2983" target="_blank" rel="noopener noreferrer">arXiv:1410.2983</a>] (Finite-size effects on photon spectrum).</li>
+        <li><a href="https://arxiv.org/abs/1409.2336" target="_blank" rel="noopener noreferrer"><em>arXiv:1409.2336</em></a> [Preprint / Working paper] (Open questions in hydrodynamics &ndash; Navier-Stokes Millennium problem conjecture).</li>
+      </ul>
+    </section>
+
+    <!-- Research & Teaching Philosophy -->
+    <section>
+      <h2>Research &amp; Teaching Philosophy <span style="font-size: 0.95rem; font-weight: normal; text-transform: none; color: var(--accent);">(Perspective personnelle)</span></h2>
+      <div class="philosophy-text">
+        <p>
+          Mon parcours scientifique et pédagogique s'est construit autour d'une fidélité constante aux fondements de la physique, où la rigueur mathématique dialogue sans cesse avec la réalité phénoménologique. Formé à l'École Normale Supérieure de la rue d'Ulm, j'ai mené mes premières grandes étapes de recherche au cœur de la chromodynamique quantique, de la tomographie du nucléon et des grands collisionneurs internationaux &mdash; coordonnant les groupes de physique diffractive et de QCD à DESY (H1) puis au CERN (ATLAS). Ces travaux expérimentaux ont notamment abouti à la première observation directe de la diffusion lumière-par-lumière au LHC, frontière où l'électrodynamique quantique la plus intime côtoie la recherche d'une nouvelle physique.
+        </p>
+        <p>
+          Au fil des années, cette démarche s'est naturellement élargie vers des questions théoriques plus vastes et fondamentales. Qu'il s'agisse de la géométrie de l'espace-temps à travers les dimensions supplémentaires, de la dynamique tourbillonnaire relativiste dans le plasma de quarks et de gluons, de la régularisation physique des singularités en mécanique des fluides 3D, ou encore de la brisure spontanée de symétrie et de la cohérence quantique macroscopique dans les milieux condensés (QED de l'eau liquide), ma recherche poursuit un même fil directeur : comprendre comment les symétries de jauge, l'hydrodynamique et la géométrie structurent l'ordre de la matière, de l'échelle subatomique aux phénomènes émergents.
+        </p>
+        <p>
+          Cette vision de la physique est indissociable de ma vocation d'enseignant et de mentor. De mes cours en école d'ingénieurs à l'ENSTA Paris ou à l'EPFL jusqu'à mes leçons données à l'Université de Rabat ou mon engagement comme examinateur aux oraux de l'École Polytechnique, je conçois la transmission comme un art exigeant d'émancipation intellectuelle. Transmettre la puissance des groupes et des représentations ou interroger avec les étudiants pourquoi «&nbsp;la nature aime à se cacher&nbsp;» procède du même élan : accompagner les jeunes esprits vers la clarté conceptuelle, cultiver le goût de la profondeur et transmettre, avec bienveillance et rigueur, le sens de la beauté des lois physiques.
+        </p>
+        <p>
+          Sur un plan plus personnel, cet itinéraire scientifique participe d’une même soif intérieure : celle d’une recherche du vrai qui ne s’épuise pas dans le seul formalisme, mais s’ouvre à ce qui dépasse la mesure. Qu’elle s’éprouve dans le silence de la pensée, la fréquentation de la philosophie, l’attention portée aux textes fondateurs ou l’écoute attentive des êtres et de leurs fragilités, cette quête cherche à relier la précision du regard à une certaine forme d’intériorité. J'ai toujours privilégié, face aux trajectoires purement administratives, la pleine liberté de la recherche fondamentale, de la réflexion et du compagnonnage intellectuel direct. Comprendre le monde ou accompagner autrui procèdent au fond d’une même disposition d’esprit : une fidélité humble et exigeante à ce qui nous élève, rend attentif au réel et donne sens au chemin.
+        </p>
+      </div>
+    </section>
+  </main>
 
 </body>
 </html>
