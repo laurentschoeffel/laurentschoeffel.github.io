@@ -214,6 +214,27 @@
       margin-bottom: 14px;
     }
 
+    .course-card {
+      background: #FDFEFE;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      padding: 14px 18px;
+      border-radius: 4px;
+      margin-bottom: 14px;
+    }
+
+    .course-card h3 {
+      margin-top: 0;
+      margin-bottom: 4px;
+    }
+
+    .course-subtitle {
+      font-style: italic;
+      color: var(--accent);
+      font-size: 0.98rem;
+      margin-bottom: 6px;
+    }
+
     /* Philosophy section */
     .philosophy-text {
       font-style: italic;
@@ -388,6 +409,74 @@
           </ul>
         </li>
       </ul>
+    </section>
+
+    <!-- NEW SECTION: Advanced Lecture Series & Courseware (CPGE / Master / PhD) -->
+    <section>
+      <h2 class="content-en">Advanced Lecture Series &amp; Courseware (CPGE / Master / PhD)</h2>
+      <h2 class="content-fr">Cours approfondis &amp; Fascicules pédagogiques (CPGE &amp; Master / Doctorat)</h2>
+
+      <!-- English Version -->
+      <div class="content-en">
+        <p style="margin-bottom: 14px; font-style: italic; color: var(--text-muted);">
+          Comprehensive lecture notes and pedagogical monographs currently prepared and offered for competitive CPGE (MP/PC), Master, and Doctoral students, bridging mathematical rigor with physical intuition:
+        </p>
+
+        <div class="course-card">
+          <h3><a href="https://raw.githubusercontent.com/laurentschoeffel/papers/main/cours-fl.pdf" target="_blank" rel="noopener noreferrer">Cours de mécanique des fluides avancée (PDF)</a></h3>
+          <div class="course-subtitle">Fondements mathématiques, cascades turbulentes et écoulements relativistes (In French)</div>
+          <p class="pub-desc">
+            A self-contained graduate-level curriculum linking functional analysis and fluid dynamics. Detailed derivation of enstrophy dynamics in 2D and 3D, Navier-Stokes criticality (Ladyzhenskaya-Prodi-Serrin scaling deficit), volume-preserving Anisotropic Parcel Model (Van der Waals covolume analogy), and the Kolmogorov dissipative cutoff. Extends to covariant relativistic hydrodynamics (Bjorken expansions, 4-vorticity, Quark-Gluon Plasma). Includes 15 doctoral-level review problems with complete step-by-step solutions.
+          </p>
+        </div>
+
+        <div class="course-card">
+          <h3><a href="https://raw.githubusercontent.com/laurentschoeffel/papers/main/cours-fl-french-cpge.pdf" target="_blank" rel="noopener noreferrer">Lectures on Advanced Fluid Mechanics (PDF)</a></h3>
+          <div class="course-subtitle">Mathematical Foundations, Turbulent Cascades, and Relativistic Flows (In English)</div>
+          <p class="pub-desc">
+            Full English curriculum addressing the mathematical and physical boundaries of continuum hydrodynamics. Covers the geometric breakdown of Sobolev embeddings, the supercritical Prodi-Serrin regularity gap, Stokes-Helmholtz parcel filtering, and the resolution of negative-pressure breakdowns in relativistic flows. Accompanied by a complete suite of 15 fully solved analytical review problems.
+          </p>
+        </div>
+
+        <div class="course-card">
+          <h3><a href="https://raw.githubusercontent.com/laurentschoeffel/papers/main/cours-qed-dc.pdf" target="_blank" rel="noopener noreferrer">Cours d'Électrodynamique Quantique (QED) et Application à l'Eau Liquide (PDF)</a></h3>
+          <div class="course-subtitle">Des Fluctuations du Vide au Couplage Dipolaire Microscopique (In French)</div>
+          <p class="pub-desc">
+            Rigorous, pedagogical introduction to canonical quantum electrodynamics directly accessible with undergraduate/CPGE electrodynamics. Reconstructs Coulomb-gauge quantization and vacuum zero-point fluctuations, develops the Power-Zienau-Woolley (PZW) transformation, solves the 300 K Van der Waals thermal stability paradox, and proves the Dicke superradiant phase transition leading to stable mesoscopic Coherence Domains in liquid water.
+          </p>
+        </div>
+      </div>
+
+      <!-- French Version -->
+      <div class="content-fr">
+        <p style="margin-bottom: 14px; font-style: italic; color: var(--text-muted);">
+          Fascicules de cours et monographies pédagogiques en cours d'élaboration et d'enseignement, conçus pour faire le pont entre le programme des classes préparatoires (CPGE MP/PC) et les exigences de la recherche (Master / Doctorat)&nbsp;:
+        </p>
+
+        <div class="course-card">
+          <h3><a href="https://raw.githubusercontent.com/laurentschoeffel/papers/main/cours-fl.pdf" target="_blank" rel="noopener noreferrer">Cours de mécanique des fluides avancée (PDF)</a></h3>
+          <div class="course-subtitle">Fondements mathématiques, cascades turbulentes et écoulements relativistes</div>
+          <p class="pub-desc">
+            Enseignement autonome de niveau master recherche et doctorat reliant analyse fonctionnelle et physique des fluides. Étude pas à pas de l'enstrophie en 2D et 3D, mise en évidence du déficit d'échelle de Ladyzhenskaya-Prodi-Serrin, régularisation du transport par un modèle de paquet anisotrope préservant le volume (analogie du covolume de Van der Waals) et coupure de la cascade de Kolmogorov. Élargi aux écoulements relativistes et au plasma de quarks et de gluons (QGP). Comprend 15 problèmes d'approfondissement intégralement corrigés.
+          </p>
+        </div>
+
+        <div class="course-card">
+          <h3><a href="https://raw.githubusercontent.com/laurentschoeffel/papers/main/cours-fl-french-cpge.pdf" target="_blank" rel="noopener noreferrer">Lectures on Advanced Fluid Mechanics (PDF)</a></h3>
+          <div class="course-subtitle">Mathematical Foundations, Turbulent Cascades, and Relativistic Flows (Version anglaise)</div>
+          <p class="pub-desc">
+            Version anglophone complète abordant la frontière entre mécanique des milieux continus et microphysique. Analyse comparative de l'étirement tourbillonnaire, verrouillage de l'enstrophie par courbure $H^2$, dérivation variationnelle du filtre de Stokes-Helmholtz, et régularisation des détentes violentes de Bjorken par relaxation causale (théorie d'Israel-Stewart). Accompagné de 15 problèmes détaillés résolus de manière exhaustive.
+          </p>
+        </div>
+
+        <div class="course-card">
+          <h3><a href="https://raw.githubusercontent.com/laurentschoeffel/papers/main/cours-qed-dc.pdf" target="_blank" rel="noopener noreferrer">Cours d'Électrodynamique Quantique (QED) et Application à l'Eau Liquide (PDF)</a></h3>
+          <div class="course-subtitle">Des Fluctuations du Vide au Couplage Dipolaire Microscopique</div>
+          <p class="pub-desc">
+            Construction pas à pas de l'électrodynamique quantique directement accessible avec le bagage d'électromagnétisme de CPGE/Licence. Quantification canonique en jauge de Coulomb et réalité physique des fluctuations du vide, transformation unitaire de Power-Zienau-Woolley (PZW), résolution du paradoxe thermique des forces de Van der Waals à 300 K, et démonstration analytique variationnelle de la transition de Dicke vers des domaines de cohérence mésoscopiques stables dans l'eau liquide.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Academic Leadership, Teaching & Mentoring -->
