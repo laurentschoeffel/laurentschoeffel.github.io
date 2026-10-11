@@ -79,8 +79,8 @@
     /* Header */
     header {
       text-align: center;
-      margin-bottom: 32px;
-      padding-bottom: 20px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
     }
 
     h1 {
@@ -122,6 +122,30 @@
       color: var(--text-muted);
     }
 
+    /* Quick Navigation Bar */
+    .nav-bar {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      font-family: var(--font-ui);
+      font-size: 0.88rem;
+      margin-bottom: 28px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-bar a {
+      color: var(--accent);
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .nav-bar a:hover {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+
     a {
       color: var(--accent);
       text-decoration: none;
@@ -135,7 +159,7 @@
 
     /* Sections */
     section {
-      margin-bottom: 28px;
+      margin-bottom: 30px;
     }
 
     h2 {
@@ -154,7 +178,7 @@
       font-size: 1.08rem;
       font-weight: 700;
       color: var(--accent);
-      margin-top: 16px;
+      margin-top: 18px;
       margin-bottom: 8px;
     }
 
@@ -309,8 +333,30 @@
       </div>
     </header>
 
+    <!-- Quick Navigation -->
+    <nav class="nav-bar">
+      <div class="content-en">
+        <a href="#highlights">Highlights</a> &bull;
+        <a href="#experience">Experience</a> &bull;
+        <a href="#publications">Publications</a> &bull;
+        <a href="#courseware">Courseware</a> &bull;
+        <a href="#leadership">Mentoring &amp; Service</a> &bull;
+        <a href="#credentials">Education</a> &bull;
+        <a href="#philosophy">Perspective</a>
+      </div>
+      <div class="content-fr">
+        <a href="#highlights">Faits marquants</a> &bull;
+        <a href="#experience">Parcours</a> &bull;
+        <a href="#publications">Publications</a> &bull;
+        <a href="#courseware">Cours &amp; Monographies</a> &bull;
+        <a href="#leadership">Enseignement &amp; Responsabilités</a> &bull;
+        <a href="#credentials">Titres</a> &bull;
+        <a href="#philosophy">Vision</a>
+      </div>
+    </nav>
+
     <!-- Key Highlights -->
-    <section>
+    <section id="highlights">
       <h2 class="content-en">Key Highlights &amp; Track Record</h2>
       <h2 class="content-fr">Faits marquants &amp; Rayonnement scientifique</h2>
       
@@ -368,7 +414,7 @@
     </section>
 
     <!-- Professional Experience -->
-    <section>
+    <section id="experience">
       <h2 class="content-en">Professional Experience</h2>
       <h2 class="content-fr">Parcours professionnel</h2>
 
@@ -417,8 +463,106 @@
       </ul>
     </section>
 
+    <!-- Recent & Selected Publications -->
+    <section id="publications">
+      <h2 class="content-en">Recent &amp; Selected Publications</h2>
+      <h2 class="content-fr">Publications récentes &amp; sélectionnées</h2>
+
+      <h3 class="content-en">Recent Theoretical &amp; Phenomenological Works (2026)</h3>
+      <h3 class="content-fr">Travaux théoriques &amp; phénoménologiques récents (2026)</h3>
+      
+      <ul>
+        <li class="publication-item">
+          <strong>T. Marsault, L. Schoeffel</strong>,<br>
+          <em>« Complex Lies, Real Physics: The Role of Algebra Complexification »</em>,<br>
+          <strong>SciPost Physics Lecture Notes</strong> (2026). &bull; [<a href="https://laurentschoeffel.github.io/papers/lie-algebra.pdf" target="_blank" rel="noopener noreferrer">PDF Article</a>]
+          <div class="pub-desc content-en">
+            Demonstrates how Lie algebra complexification classifies the irreducible representations of the Lorentz group, showing how spacetime geometry dictates the elementary matter spectrum.
+          </div>
+          <div class="pub-desc content-fr">
+            Démontre comment la complexification d'algèbres de Lie classifie les représentations du groupe de Lorentz, établissant que la géométrie de l'espace-temps dicte le spectre des particules élémentaires.
+          </div>
+        </li>
+
+        <li class="publication-item">
+          <strong>L. Schoeffel</strong>,<br>
+          <em>« From the photon mirage to the proton mass: A pedagogical approach to the trace anomaly and confinement »</em>,<br>
+          <strong>SciPost Physics Lecture Notes</strong> (2026). &bull; [<a href="https://laurentschoeffel.github.io/papers/origin-of-mass.pdf" target="_blank" rel="noopener noreferrer">PDF Article</a>]
+          <div class="pub-desc content-en">
+            Derives the mass gap from the trace anomaly: identically zero on asymptotic QED photons, it condenses under QCD confinement into the ~1 GeV proton mass.
+          </div>
+          <div class="pub-desc content-fr">
+            Dérive le saut de masse de l'anomalie de trace&nbsp;: strictement nulle pour les photons asymptotiques en QED, elle condense par confinement QCD en la masse de ~1&nbsp;GeV du proton.
+          </div>
+        </li>
+
+        <li class="publication-item">
+          <strong>M. Ait Tamlihat, G. Ez-Zobayr, L. Schoeffel, Y. Tayalati</strong>,<br>
+          <em>« Searches for extra-dimensional excitations in light-by-light scattering »</em>,<br>
+          <strong>Journal of High Energy Physics (JHEP)</strong> (2026), <a href="https://arxiv.org/abs/2601.03110" target="_blank" rel="noopener noreferrer">arXiv:2601.03110</a>.
+          <div class="pub-desc content-en">
+            Comprehensive reformulation of 5D Randall-Sundrum theory (gauge equivalence, trace anomaly, and Higgs-curvature mixing), establishing the first direct LHC exclusion contours on the Radion via light-by-light scattering.
+          </div>
+          <div class="pub-desc content-fr">
+            Refondation théorique complète du modèle 5D de Randall-Sundrum (équivalence de jauges, anomalie de trace et mélange Higgs-courbure), établissant les premières limites d'exclusion directes du LHC sur le Radion en diffusion lumière-par-lumière.
+          </div>
+        </li>
+
+        <li class="publication-item">
+          <strong>M. Ait Tamlihat, G. Ez-Zobayr, L. Schoeffel, Y. Tayalati</strong>,<br>
+          <em>« Relativistic Vorticity in the Quark-Gluon Plasma: Symmetries, Explosive Dilution, and Azimuthal Spin Alignment »</em>, 
+          <a href="https://arxiv.org/abs/2607.03716" target="_blank" rel="noopener noreferrer">arXiv:2607.03716</a> (soumis, 2026).<br>
+          <em>« Relativistic Hydrodynamics and Vorticity Dynamics in High-Energy Heavy-Ion Collisions: A Collective Flow Perspective »</em>, 
+          <a href="https://arxiv.org/abs/2607.04273" target="_blank" rel="noopener noreferrer">arXiv:2607.04273</a> (soumis, 2026).
+          <div class="pub-desc content-en">
+            3D relativistic viscous hydrodynamic framework modeling extreme fluid vorticity (&omega; ~ 10<sup>21</sup> s<sup>&minus;1</sup>) in the quark-gluon plasma, linking hyperon spin polarization to QGP transport coefficients.
+          </div>
+          <div class="pub-desc content-fr">
+            Cadre hydrodynamique relativiste visqueux 3D modélisant la vorticité extrême (&omega; ~ 10<sup>21</sup> s<sup>&minus;1</sup>) du plasma quarks-gluons, reliant la polarisation de spin des hypérons aux coefficients de transport du milieu.
+          </div>
+        </li>
+      </ul>
+
+      <h3 class="content-en">Core Experimental &amp; Landmark Contributions</h3>
+      <h3 class="content-fr">Contributions expérimentales majeures de référence</h3>
+      <ul>
+        <li class="publication-item">
+          <strong><span class="content-en">Light-by-Light Scattering in Pb-Pb Collisions (ATLAS Collaboration):</span><span class="content-fr">Diffusion lumière-par-lumière dans les collisions Pb-Pb (Collaboration ATLAS)&nbsp;:</span></strong><br>
+          <em><span class="content-en">(Analysis initiator, co-lead analyzer, and publication contact)</span><span class="content-fr">(Initiateur de l'analyse, co-responsable d'analyse et contact de publication)</span></em><br>
+          <em>JHEP</em> 03 (2021) 243 [<a href="https://arxiv.org/abs/2008.05355" target="_blank" rel="noopener noreferrer">arXiv:2008.05355</a>]; 
+          <em>Phys. Rev. Lett.</em> 123 (2019) 052001 [<a href="https://arxiv.org/abs/1904.03536" target="_blank" rel="noopener noreferrer">arXiv:1904.03536</a>]; 
+          <em>Nature Phys.</em> 13 (2017) 852 [<a href="https://arxiv.org/abs/1702.01625" target="_blank" rel="noopener noreferrer">arXiv:1702.01625</a>].<br>
+          <span class="highlight-blue"><span class="content-en">Key impact: Over 550 citations</span><span class="content-fr">Impact majeur&nbsp;: plus de 550 citations</span></span> <span class="content-en">establishing the first direct experimental observation of light-by-light scattering at high energy.</span><span class="content-fr">établissant la première observation expérimentale directe de la diffusion lumière-par-lumière à haute énergie.</span>
+        </li>
+        <li class="publication-item">
+          <strong><span class="content-en">Exclusive Photon-Photon Processes (ATLAS Collaboration):</span><span class="content-fr">Processus photon-photon exclusifs (Collaboration ATLAS)&nbsp;:</span></strong><br>
+          <em><span class="content-en">(Lead analyzer and physics contact)</span><span class="content-fr">(Responsable principal d'analyse et contact physique)</span></em><br>
+          <em>Phys. Rev. D</em> 94 (2016) 032011 [<a href="https://arxiv.org/abs/1607.03745" target="_blank" rel="noopener noreferrer">arXiv:1607.03745</a>]; 
+          <em>Phys. Lett. B</em> 761 (2016) 158 [<a href="https://arxiv.org/abs/1607.06605" target="_blank" rel="noopener noreferrer">arXiv:1607.06605</a>]; 
+          <em>Phys. Lett. B</em> 749 (2015) 242 [<a href="https://arxiv.org/abs/1506.07098" target="_blank" rel="noopener noreferrer">arXiv:1506.07098</a>].<br>
+          <span class="highlight-blue"><span class="content-en">Key impact: Over 550 citations</span><span class="content-fr">Impact majeur&nbsp;: plus de 550 citations</span></span>.
+        </li>
+        <li class="publication-item">
+          <strong><span class="content-en">H1 Collaboration Baseline Reference Papers (HERA):</span><span class="content-fr">Articles de référence de la collaboration H1 (HERA)&nbsp;:</span></strong><br>
+          <em><span class="content-en">(Lead analyzer and working group convener)</span><span class="content-fr">(Responsable d'analyse et coordinateur de groupe de travail)</span></em><br>
+          <em>EPJC</em> 72 (2012) 2074 [<a href="https://arxiv.org/abs/1203.4495" target="_blank" rel="noopener noreferrer">arXiv:1203.4495</a>] (<span class="highlight-blue"><span class="content-en">&gt;650 citations</span><span class="content-fr">&gt;650 citations</span></span>);<br>
+          <em>Phys. Lett. B</em> 681 (2009) 391 [<a href="https://arxiv.org/abs/0907.5289" target="_blank" rel="noopener noreferrer">arXiv:0907.5289</a>] (<span class="highlight-blue"><span class="content-en">&gt;950 citations</span><span class="content-fr">&gt;950 citations</span></span>, <span class="content-en">fundamental benchmark for EIC and CEBAF nucleon structure programs).</span><span class="content-fr">référence fondamentale pour les programmes de structure du nucléon de l'EIC et de CEBAF).</span>
+        </li>
+      </ul>
+
+      <h3 class="content-en">Key Theoretical &amp; Phenomenological Landmarks</h3>
+      <h3 class="content-fr">Articles théoriques &amp; phénoménologiques de référence</h3>
+      <ul>
+        <li><em>Phys. Lett. B</em> 846 (2023) 138237 [<a href="https://arxiv.org/abs/2306.15558" target="_blank" rel="noopener noreferrer">arXiv:2306.15558</a>] (<span class="content-en">Massive gravitons coupling to photons</span><span class="content-fr">Couplage des gravitons massifs aux photons</span>).</li>
+        <li><em>Prog. Part. Nucl. Phys.</em> 120 (2021) 103889 [<a href="https://arxiv.org/abs/2010.07855" target="_blank" rel="noopener noreferrer">arXiv:2010.07855</a>] (<span class="content-en">Photon-photon physics at LHC &amp; high-power lasers</span><span class="content-fr">Physique photon-photon au LHC et lasers ultra-intenses</span>).</li>
+        <li><em>Phys. Lett. B</em> 795 (2019) 339 [<a href="https://arxiv.org/abs/1903.04151" target="_blank" rel="noopener noreferrer">arXiv:1903.04151</a>] (<span class="content-en">Axion-like particles constraints via light-by-light scattering</span><span class="content-fr">Contraintes sur les particules de type axion via la diffusion lumière-par-lumière</span>).</li>
+        <li><em>Phys. Lett. B</em> 741 (2015) 66 [<a href="https://arxiv.org/abs/1410.2983" target="_blank" rel="noopener noreferrer">arXiv:1410.2983</a>] (<span class="content-en">Finite-size effects on photon spectrum</span><span class="content-fr">Effets de taille finie sur le spectre de photons</span>).</li>
+        <li><a href="https://arxiv.org/abs/1409.2336" target="_blank" rel="noopener noreferrer"><em>arXiv:1409.2336</em></a> [<span class="content-en">Preprint / Working paper</span><span class="content-fr">Prépublication / document de travail</span>] (<span class="content-en">Open questions in hydrodynamics &ndash; Navier-Stokes Millennium problem conjecture</span><span class="content-fr">Questions ouvertes en hydrodynamique &ndash; conjecture sur le problème du Millénaire de Navier-Stokes</span>).</li>
+      </ul>
+    </section>
+
     <!-- Advanced Lecture Series & Courseware (CPGE / Master / PhD) -->
-    <section>
+    <section id="courseware">
       <h2 class="content-en">Advanced Lecture Series &amp; Courseware (CPGE / Master / PhD)</h2>
       <h2 class="content-fr">Cours approfondis &amp; Fascicules pédagogiques (CPGE &amp; Master / Doctorat)</h2>
 
@@ -435,9 +579,11 @@
             <span>&bull; <a href="https://laurentschoeffel.github.io/papers/cours-fl.pdf" target="_blank" rel="noopener noreferrer"><strong>English Version (PDF)</strong></a></span>
             <span style="margin: 0 6px; color: var(--border);">&bull;</span>
             <span><a href="https://laurentschoeffel.github.io/papers/cours-fl-french-cpge.pdf" target="_blank" rel="noopener noreferrer"><strong>French Version (PDF)</strong></a></span>
+            <span style="margin: 0 6px; color: var(--border);">&bull;</span>
+            <span><a href="https://laurentschoeffel.github.io/papers/scale-symmetry-3d-flows.pdf" target="_blank" rel="noopener noreferrer"><strong>Research Paper: Scale Symmetry (PDF)</strong></a></span>
           </div>
           <p class="pub-desc">
-            A comprehensive graduate-level course bridging mathematical methods and fluid dynamics. It covers 2D and 3D vortex dynamics, the regularity limits of the Navier-Stokes equations, turbulence cascades, and covariant relativistic flows (such as the quark-gluon plasma). The lecture series introduces a physical regularization to prevent singularities and includes 15 detailed, step-by-step solved analytical problems.
+            Graduate monograph bridging mathematical methods and fluid dynamics: 2D/3D vortex dynamics, Navier-Stokes regularity, turbulence cascades, relativistic flows, and a physical regularization of singularities (15 solved problems).
           </p>
         </div>
 
@@ -447,10 +593,10 @@
           <div class="course-links">
             <span>&bull; <a href="https://laurentschoeffel.github.io/papers/cours-qed-dc.pdf" target="_blank" rel="noopener noreferrer"><strong>Lecture Notes (PDF)</strong></a></span>
             <span style="margin: 0 6px; color: var(--border);">&bull;</span>
-            <span><a href="https://laurentschoeffel.github.io/papers/qed-liquid-water.pdf" target="_blank" rel="noopener noreferrer"><strong>Research Paper / Foundations (PDF)</strong></a></span>
+            <span><a href="https://laurentschoeffel.github.io/papers/qed-liquid-water.pdf" target="_blank" rel="noopener noreferrer"><strong>Associated Research Paper (PDF)</strong></a></span>
           </div>
           <p class="pub-desc">
-            A clear and pedagogically structured introduction to quantum electrodynamics, accessible with undergraduate electromagnetic theory. It reconstructs field quantization, explores the physical reality of vacuum fluctuations, and examines how collective light-matter coupling can stabilize mesoscopic "coherence domains" in liquid water at room temperature.
+            Pedagogical introduction to QED from undergraduate electromagnetism: field quantization, vacuum fluctuations, and collective light-matter coupling stabilizing mesoscopic coherence domains in liquid water.
           </p>
         </div>
       </div>
@@ -468,9 +614,11 @@
             <span>&bull; <a href="https://laurentschoeffel.github.io/papers/cours-fl-french-cpge.pdf" target="_blank" rel="noopener noreferrer"><strong>Version française (PDF)</strong></a></span>
             <span style="margin: 0 6px; color: var(--border);">&bull;</span>
             <span><a href="https://laurentschoeffel.github.io/papers/cours-fl.pdf" target="_blank" rel="noopener noreferrer"><strong>Version anglaise (PDF)</strong></a></span>
+            <span style="margin: 0 6px; color: var(--border);">&bull;</span>
+            <span><a href="https://laurentschoeffel.github.io/papers/scale-symmetry-3d-flows.pdf" target="_blank" rel="noopener noreferrer"><strong>Article de recherche associé (PDF)</strong></a></span>
           </div>
           <p class="pub-desc">
-            Un cours complet qui fait le lien entre outils mathématiques et physique des fluides. Il aborde la dynamique des tourbillons en 2D et 3D, les limites des équations de Navier-Stokes, la turbulence et la cascade d’énergie, jusqu’aux fluides relativistes (plasma de quarks et de gluons). L'ouvrage propose une approche physique pour éviter l'apparition de singularités et comprend 15 problèmes d’approfondissement intégralement corrigés.
+            Monographie de niveau master et doctorat reliant outils mathématiques et dynamique des fluides&nbsp;: tourbillons 2D/3D, régularité de Navier-Stokes, turbulence, fluides relativistes et régularisation physique des singularités (15 problèmes corrigés).
           </p>
         </div>
 
@@ -483,14 +631,14 @@
             <span><a href="https://laurentschoeffel.github.io/papers/qed-liquid-water.pdf" target="_blank" rel="noopener noreferrer"><strong>Article de recherche associé (PDF)</strong></a></span>
           </div>
           <p class="pub-desc">
-            Une introduction progressive et rigoureuse à l'électrodynamique quantique, directement accessible avec les bases d'électromagnétisme de CPGE ou de licence. Le cours détaille la quantification du champ électromagnétique et le rôle physique du vide, montre comment la matière interagit collectivement avec le rayonnement, et explique la formation de « domaines de cohérence » stables dans l’eau liquide à température ambiante.
+            Introduction progressive à l'électrodynamique quantique accessible dès le premier cycle&nbsp;: quantification des champs, vide quantique et couplage collectif lumière-matière stabilisant des domaines de cohérence dans l'eau liquide.
           </p>
         </div>
       </div>
     </section>
 
     <!-- Academic Leadership, Teaching & Mentoring -->
-    <section>
+    <section id="leadership">
       <h2 class="content-en">Academic Leadership, Teaching &amp; Mentoring</h2>
       <h2 class="content-fr">Enseignement, mentorat &amp; responsabilités académiques</h2>
 
@@ -602,7 +750,7 @@
           <strong>Advanced CPGE Lecture Course &amp; Monograph:</strong> Designed and taught a specialized course entitled <em>«&nbsp;Les symétries en physique, compléments de cours en CPGE&nbsp;»</em> intended for CPGE students (LLG MPSI/MP* and PCSI/PC).
           &bull; [<a href="https://laurentschoeffel.github.io/papers/CPGE-groupes.pdf" target="_blank" rel="noopener noreferrer">PDF Monograph (188 p.)</a>]
           <div class="pub-desc">
-            A comprehensive, rigorous course spanning Hamiltonian mechanics, canonical transformations, Lie groups and algebras (SO(3), SU(2), Lorentz, Poincaré), and representation theory (Schur's lemma, Casimir operators). Demonstrates how the algebraic grammar of symmetries strictly determines the elementary matter and field content of the universe.
+            Comprehensive 188-page lecture monograph connecting Hamiltonian mechanics, Lie groups (SO(3), SU(2), Lorentz, Poincaré), and representation theory to show how spacetime symmetries dictate elementary particles.
           </div>
         </li>
       </ul>
@@ -613,14 +761,14 @@
           <strong>Monographie et cours d'approfondissement pour CPGE&nbsp;:</strong> Conception et enseignement d'un cours approfondi intitulé <em>«&nbsp;Les symétries en physique, compléments de cours en CPGE&nbsp;»</em> à destination des étudiants de classes préparatoires (notamment LLG MPSI/MP* et PCSI/PC).
           &bull; [<a href="https://laurentschoeffel.github.io/papers/CPGE-groupes.pdf" target="_blank" rel="noopener noreferrer">Monographie PDF (188 p.)</a>]
           <div class="pub-desc">
-            Ouvrage complet et rigoureux reliant mécanique hamiltonienne, transformations canoniques, groupes et algèbres de Lie (SO(3), SU(2), Lorentz, Poincaré) et théorie des représentations (lemme de Schur, opérateurs de Casimir). Il met en lumière comment la grammaire des symétries dicte rigoureusement le spectre de la matière et des champs élémentaires.
+            Monographie de 188 pages articulant mécanique hamiltonienne, groupes de Lie (SO(3), SU(2), Lorentz, Poincaré) et représentations pour montrer comment les symétries dictent le spectre des particules élémentaires.
           </div>
         </li>
       </ul>
     </section>
 
     <!-- Education & Academic Credentials -->
-    <section>
+    <section id="credentials">
       <h2 class="content-en">Education &amp; Academic Credentials</h2>
       <h2 class="content-fr">Titres &amp; formation universitaire</h2>
 
@@ -661,106 +809,8 @@
       </ul>
     </section>
 
-    <!-- Recent & Selected Publications -->
-    <section>
-      <h2 class="content-en">Recent &amp; Selected Publications</h2>
-      <h2 class="content-fr">Publications récentes &amp; sélectionnées</h2>
-
-      <h3 class="content-en">Recent Theoretical &amp; Phenomenological Works (2026)</h3>
-      <h3 class="content-fr">Travaux théoriques &amp; phénoménologiques récents (2026)</h3>
-      
-      <ul>
-        <li class="publication-item">
-          <strong>T. Marsault, L. Schoeffel</strong>,<br>
-          <em>« Complex Lies, Real Physics: The Role of Algebra Complexification »</em>,<br>
-          <strong>SciPost Physics Lecture Notes</strong> (2026). &bull; [<a href="https://laurentschoeffel.github.io/papers/lie-algebra.pdf" target="_blank" rel="noopener noreferrer">PDF Article</a>]
-          <div class="pub-desc content-en">
-            Demonstrates how Lie algebra complexification classifies the irreducible representations of the Lorentz group, revealing how spacetime geometry dictates the spectrum of elementary matter fields.
-          </div>
-          <div class="pub-desc content-fr">
-            Établit comment la complexification d'algèbres de Lie classifie les représentations du groupe de Lorentz, démontrant que la géométrie de l'espace-temps fixe à elle seule le spectre des particules élémentaires.
-          </div>
-        </li>
-
-        <li class="publication-item">
-          <strong>L. Schoeffel</strong>,<br>
-          <em>« From the photon mirage to the proton mass: A pedagogical approach to the trace anomaly and confinement »</em>,<br>
-          <strong>SciPost Physics Lecture Notes</strong> (2026). &bull; [<a href="https://laurentschoeffel.github.io/papers/origin-of-mass.pdf" target="_blank" rel="noopener noreferrer">PDF Article</a>]
-          <div class="pub-desc content-en">
-            Derives the mass gap from the trace anomaly: while strictly vanishing for asymptotic photons in QED, it condenses under color confinement to generate the ~1 GeV proton mass.
-          </div>
-          <div class="pub-desc content-fr">
-            Dérivation du saut de masse à partir de l'anomalie de trace&nbsp;: nulle pour les photons asymptotiques en QED, elle condense sous l'effet du confinement pour engendrer la masse de ~1&nbsp;GeV du proton.
-          </div>
-        </li>
-
-        <li class="publication-item">
-          <strong>M. Ait Tamlihat, G. Ez-Zobayr, L. Schoeffel, Y. Tayalati</strong>,<br>
-          <em>« Searches for extra-dimensional excitations in light-by-light scattering »</em>,<br>
-          <strong>Journal of High Energy Physics (JHEP)</strong> (2026), <a href="https://arxiv.org/abs/2601.03110" target="_blank" rel="noopener noreferrer">arXiv:2601.03110</a>.
-          <div class="pub-desc content-en">
-            Probes Kaluza-Klein graviton excitations in diphoton production at the LHC, setting direct benchmark constraints on extra-dimensional models via light-by-light scattering.
-          </div>
-          <div class="pub-desc content-fr">
-            Recherche d'excitations gravitationnelles de Kaluza-Klein dans la diffusion lumière-par-lumière au LHC, établissant de nouvelles limites directes sur les modèles à dimensions supplémentaires.
-          </div>
-        </li>
-
-        <li class="publication-item">
-          <strong>M. Ait Tamlihat, G. Ez-Zobayr, L. Schoeffel, Y. Tayalati</strong>,<br>
-          <em>« Relativistic Vorticity in the Quark-Gluon Plasma: Symmetries, Explosive Dilution, and Azimuthal Spin Alignment »</em>, 
-          <a href="https://arxiv.org/abs/2607.03716" target="_blank" rel="noopener noreferrer">arXiv:2607.03716</a> (soumis, 2026).<br>
-          <em>« Relativistic Hydrodynamics and Vorticity Dynamics in High-Energy Heavy-Ion Collisions: A Collective Flow Perspective »</em>, 
-          <a href="https://arxiv.org/abs/2607.04273" target="_blank" rel="noopener noreferrer">arXiv:2607.04273</a> (soumis, 2026).
-          <div class="pub-desc content-en">
-            Formulates a 3D relativistic hydrodynamic framework modeling extreme fluid vorticity (&omega; ~ 10<sup>21</sup> s<sup>&minus;1</sup>) in the quark-gluon plasma, explaining hyperon spin polarization and constraining QGP transport coefficients.
-          </div>
-          <div class="pub-desc content-fr">
-            Cadre hydrodynamique relativiste 3D modélisant la vorticité extrême (&omega; ~ 10<sup>21</sup> s<sup>&minus;1</sup>) du plasma quarks-gluons, reliant l'alignement de spin des hypérons aux coefficients de transport du milieu.
-          </div>
-        </li>
-      </ul>
-
-      <h3 class="content-en">Core Experimental &amp; Landmark Contributions</h3>
-      <h3 class="content-fr">Contributions expérimentales majeures de référence</h3>
-      <ul>
-        <li class="publication-item">
-          <strong><span class="content-en">Light-by-Light Scattering in Pb-Pb Collisions (ATLAS Collaboration):</span><span class="content-fr">Diffusion lumière-par-lumière dans les collisions Pb-Pb (Collaboration ATLAS)&nbsp;:</span></strong><br>
-          <em><span class="content-en">(Analysis initiator, co-lead analyzer, and publication contact)</span><span class="content-fr">(Initiateur de l'analyse, co-responsable d'analyse et contact de publication)</span></em><br>
-          <em>Nature Phys.</em> 13 (2017) 852 [<a href="https://arxiv.org/abs/1702.01625" target="_blank" rel="noopener noreferrer">arXiv:1702.01625</a>]; 
-          <em>Phys. Rev. Lett.</em> 123 (2019) 052001 [<a href="https://arxiv.org/abs/1904.03536" target="_blank" rel="noopener noreferrer">arXiv:1904.03536</a>]; 
-          <em>JHEP</em> 03 (2021) 243 [<a href="https://arxiv.org/abs/2008.05355" target="_blank" rel="noopener noreferrer">arXiv:2008.05355</a>].<br>
-          <span class="highlight-blue"><span class="content-en">Key impact: Over 550 citations</span><span class="content-fr">Impact majeur&nbsp;: plus de 550 citations</span></span> <span class="content-en">establishing the first direct experimental observation of light-by-light scattering at high energy.</span><span class="content-fr">établissant la première observation expérimentale directe de la diffusion lumière-par-lumière à haute énergie.</span>
-        </li>
-        <li class="publication-item">
-          <strong><span class="content-en">Exclusive Photon-Photon Processes (ATLAS Collaboration):</span><span class="content-fr">Processus photon-photon exclusifs (Collaboration ATLAS)&nbsp;:</span></strong><br>
-          <em><span class="content-en">(Lead analyzer and physics contact)</span><span class="content-fr">(Responsable principal d'analyse et contact physique)</span></em><br>
-          <em>Phys. Rev. D</em> 94 (2016) 032011 [<a href="https://arxiv.org/abs/1607.03745" target="_blank" rel="noopener noreferrer">arXiv:1607.03745</a>]; 
-          <em>Phys. Lett. B</em> 761 (2016) 158 [<a href="https://arxiv.org/abs/1607.06605" target="_blank" rel="noopener noreferrer">arXiv:1607.06605</a>]; 
-          <em>Phys. Lett. B</em> 749 (2015) 242 [<a href="https://arxiv.org/abs/1506.07098" target="_blank" rel="noopener noreferrer">arXiv:1506.07098</a>].<br>
-          <span class="highlight-blue"><span class="content-en">Key impact: Over 550 citations</span><span class="content-fr">Impact majeur&nbsp;: plus de 550 citations</span></span>.
-        </li>
-        <li class="publication-item">
-          <strong><span class="content-en">H1 Collaboration Baseline Reference Papers (HERA):</span><span class="content-fr">Articles de référence de la collaboration H1 (HERA)&nbsp;:</span></strong><br>
-          <em><span class="content-en">(Lead analyzer and working group convener)</span><span class="content-fr">(Responsable d'analyse et coordinateur de groupe de travail)</span></em><br>
-          <em>EPJC</em> 72 (2012) 2074 [<a href="https://arxiv.org/abs/1203.4495" target="_blank" rel="noopener noreferrer">arXiv:1203.4495</a>] (<span class="highlight-blue"><span class="content-en">&gt;650 citations</span><span class="content-fr">&gt;650 citations</span></span>);<br>
-          <em>Phys. Lett. B</em> 681 (2009) 391 [<a href="https://arxiv.org/abs/0907.5289" target="_blank" rel="noopener noreferrer">arXiv:0907.5289</a>] (<span class="highlight-blue"><span class="content-en">&gt;950 citations</span><span class="content-fr">&gt;950 citations</span></span>, <span class="content-en">fundamental benchmark for EIC and CEBAF nucleon structure programs).</span><span class="content-fr">référence fondamentale pour les programmes de structure du nucléon de l'EIC et de CEBAF).</span>
-        </li>
-      </ul>
-
-      <h3 class="content-en">Key Theoretical &amp; Phenomenological Landmarks</h3>
-      <h3 class="content-fr">Articles théoriques &amp; phénoménologiques de référence</h3>
-      <ul>
-        <li><em>Phys. Lett. B</em> 846 (2023) 138237 [<a href="https://arxiv.org/abs/2306.15558" target="_blank" rel="noopener noreferrer">arXiv:2306.15558</a>] (<span class="content-en">Massive gravitons coupling to photons</span><span class="content-fr">Couplage des gravitons massifs aux photons</span>).</li>
-        <li><em>Prog. Part. Nucl. Phys.</em> 120 (2021) 103889 [<a href="https://arxiv.org/abs/2010.07855" target="_blank" rel="noopener noreferrer">arXiv:2010.07855</a>] (<span class="content-en">Photon-photon physics at LHC &amp; high-power lasers</span><span class="content-fr">Physique photon-photon au LHC et lasers ultra-intenses</span>).</li>
-        <li><em>Phys. Lett. B</em> 795 (2019) 339 [<a href="https://arxiv.org/abs/1903.04151" target="_blank" rel="noopener noreferrer">arXiv:1903.04151</a>] (<span class="content-en">Axion-like particles constraints via light-by-light scattering</span><span class="content-fr">Contraintes sur les particules de type axion via la diffusion lumière-par-lumière</span>).</li>
-        <li><em>Phys. Lett. B</em> 741 (2015) 66 [<a href="https://arxiv.org/abs/1410.2983" target="_blank" rel="noopener noreferrer">arXiv:1410.2983</a>] (<span class="content-en">Finite-size effects on photon spectrum</span><span class="content-fr">Effets de taille finie sur le spectre de photons</span>).</li>
-        <li><a href="https://arxiv.org/abs/1409.2336" target="_blank" rel="noopener noreferrer"><em>arXiv:1409.2336</em></a> [<span class="content-en">Preprint / Working paper</span><span class="content-fr">Prépublication / document de travail</span>] (<span class="content-en">Open questions in hydrodynamics &ndash; Navier-Stokes Millennium problem conjecture</span><span class="content-fr">Questions ouvertes en hydrodynamique &ndash; conjecture sur le problème du Millénaire de Navier-Stokes</span>).</li>
-      </ul>
-    </section>
-
     <!-- Research & Teaching Philosophy -->
-    <section>
+    <section id="philosophy">
       <h2 class="content-en">Research &amp; Teaching Philosophy <span style="font-size: 0.95rem; font-weight: normal; text-transform: none; color: var(--accent);">(Personal perspective)</span></h2>
       <h2 class="content-fr">Vision de la recherche &amp; de l'enseignement <span style="font-size: 0.95rem; font-weight: normal; text-transform: none; color: var(--accent);">(Perspective personnelle)</span></h2>
 
