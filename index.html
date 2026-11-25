@@ -266,6 +266,53 @@
       margin-bottom: 10px;
     }
 
+    /* Reading Guide Box */
+    .reading-guide {
+      background: #F8FAFC;
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--soft);
+      border-radius: 4px;
+      padding: 14px 18px;
+      margin-top: 10px;
+      font-size: 0.95rem;
+      color: #374151;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .reading-guide-title {
+      font-family: var(--font-ui);
+      font-size: 0.84rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .reading-guide p {
+      margin-bottom: 10px;
+    }
+
+    .reading-guide ul {
+      margin-top: 6px;
+      margin-bottom: 10px;
+    }
+
+    .reading-guide li {
+      margin-bottom: 7px;
+      text-align: justify;
+    }
+
+    .reading-guide-tip {
+      font-style: italic;
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      margin-bottom: 0 !important;
+      padding-top: 8px;
+      border-top: 1px dashed var(--border);
+    }
+
     /* Philosophy section */
     .philosophy-text {
       font-style: italic;
@@ -799,10 +846,22 @@
       <ul class="content-en">
         <li><strong>Weekend Volunteer Academic Tutor:</strong> Provide ongoing pedagogical support, literature, mathematics, and physics tutoring in a community association for students of all levels, ranging from secondary schools to competitive STEM preparatory classes (<em>Classes Préparatoires aux Grandes Écoles</em> / CPGE).</li>
         <li>
-          <strong>Advanced CPGE Lecture Course &amp; Monograph:</strong> Designed and taught a specialized course entitled <em>«&nbsp;Les symétries en physique, compléments de cours en CPGE&nbsp;»</em> intended for CPGE students (LLG MPSI/MP* and PCSI/PC).
-          &bull; [<a href="https://laurentschoeffel.github.io/papers/CPGE-groupes.pdf" target="_blank" rel="noopener noreferrer">PDF Monograph (188 p.)</a>]
-          <div class="pub-desc">
-            Comprehensive 188-page lecture monograph connecting Hamiltonian mechanics, Lie groups (SO(3), SU(2), Lorentz, Poincaré), and representation theory to show how spacetime symmetries dictate elementary particles.
+          <strong>Advanced CPGE Lecture Course &amp; Monograph:</strong> Designed and taught a specialized course entitled <em>«&nbsp;Les symétries en physique, compléments de cours en CPGE&nbsp;»</em> intended for CPGE students (primarily PCSI/PC, complementing MPSI/MP* curricula at Lycée Louis-le-Grand).
+          &bull; [<a href="https://laurentschoeffel.github.io/papers/CPGE-groupes.pdf" target="_blank" rel="noopener noreferrer">PDF Monograph (133 p.)</a>]
+          <div class="reading-guide">
+            <div class="reading-guide-title">Overview &amp; Reading Guide</div>
+            <p>
+              Conceived as a self-contained, step-by-step progression accessible from undergraduate CPGE level, this monograph demonstrates a central thesis of modern theoretical physics: <strong>the material content of nature is a rigorous consequence of its algebraic grammar</strong>. Rather than imposing abstract mathematical machinery upfront, every concept is constructed organically as physical questions require it—moving from the methodological principle of <em>symmetry</em> in physics toward the philosophical horizon of <em>harmony</em>.
+            </p>
+            <ul>
+              <li><strong>Part I &mdash; From Concrete Symmetries to Analytical &amp; Quantum Mechanics (Sec. 1&ndash;5):</strong> Opens with elementary symmetries of geometric objects and equations before introducing group axioms, Hamiltonian mechanics, symplectic geometry (<em>Sp</em>(2<em>n</em>,&nbsp;&Ropf;)), Liouville's and Noether's theorems (identifying conserved quantities as symmetry generators), matrix Lie groups/algebras (<em>SO</em>(<em>n</em>), <em>U</em>(<em>n</em>), <em>SU</em>(<em>n</em>)), the first local vs. global comparison of <em>SU</em>(2) and <em>SO</em>(3), and unitary symmetry operators in quantum Hilbert spaces.</li>
+              <li><strong>Part II &mdash; Representation Theory &amp; the Anatomy of Rotations (Sec. 6&ndash;9):</strong> Develops the algebraic toolkit of group and Lie-algebra representations: irreducibility ("atoms of symmetry"), Schur's lemma and quantum energy degeneracies, characters, the adjoint representation, and Lie-algebra complexification. Ladder operators then classify all irreducible representations of <em>SO</em>(3) and <em>SU</em>(2) by spin <em>j</em> &isin; &frac12;&Nopf;, separating integer-spin bosons from half-integer-spin fermions (projective representations) and deriving Clebsch-Gordan addition. <em>Section 9</em> offers an optional geometric and topological deepening (Lie groups as manifolds, tangent spaces, compactness, and the universal double cover <em>SU</em>(2) &rarr; <em>SO</em>(3)).</li>
+              <li><strong>Part III &mdash; Relativistic Spacetime &amp; Elementary Particles (Sec. 10&ndash;11):</strong> Applies the entire framework to special relativity. Complexifying the Lorentz algebra yields 𝔰𝔬(1,3)<sub>&Copf;</sub> &simeq; 𝔰𝔲(2)<sub>&Copf;</sub> &oplus; 𝔰𝔲(2)<sub>&Copf;</sub> (with double cover <em>SL</em>(2,&Copf;)), classifying fields by pairs (<em>j</em><sub>1</sub>,&nbsp;<em>j</em><sub>2</sub>): scalars (0,0), left/right Weyl spinors (&frac12;,0) and (0,&frac12;), the parity-invariant Dirac bispinor (&frac12;,0)&oplus;(0,&frac12;), four-vectors (&frac12;,&frac12;), and the electromagnetic tensor (1,0)&oplus;(0,1). Extending to the 10-generator Poincaré group culminates in Wigner's classification via the two Casimir invariants—mass squared <em>P</em><sup>2</sup> and Pauli-Lubanski spin <em>W</em><sup>2</sup>—identifying an elementary particle with an irreducible unitary representation of Poincaré.</li>
+              <li><strong>Part IV &mdash; Philosophical Epilogue &amp; Self-Contained Appendices (Sec. 12 &amp; App. A):</strong> Concludes with an epistemological reflection connecting group-theoretic essences to Plato versus Democritus, Heisenberg, and St. Teresa of Ávila's <em>Interior Castle</em>, followed by a themed bibliography and complete appendices featuring rigorous proofs (subgroups of (&Ropf;,+), Lagrange, Burnside), 20 group-theory exercises, Hilbert-space refreshers, and the hidden <em>SO</em>(4) Runge-Lenz symmetry of the Kepler problem and hydrogen atom.</li>
+            </ul>
+            <p class="reading-guide-tip">
+              <strong>How to navigate the text:</strong> Color-coded blocks highlight definitions (yellow), key theorems (orange), and physical interpretations (green), with chapter-end syntheses at Sections 6.4, 7.4, 8.7, 9.5, and 11.4. Readers focused on the physical trajectory may skip Section 9 on a first reading and proceed directly from <em>SO</em>(3)/<em>SU</em>(2) (Section 8) to the Lorentz and Poincaré groups (Sections 10&ndash;11).
+            </p>
           </div>
         </li>
       </ul>
@@ -810,10 +869,22 @@
       <ul class="content-fr">
         <li><strong>Tutorat associatif bénévole&nbsp;:</strong> Soutien pédagogique régulier chaque week-end en mathématiques, physique et littérature au sein d'une association de quartier, auprès d'élèves de tous niveaux, du secondaire aux classes préparatoires aux grandes écoles (CPGE).</li>
         <li>
-          <strong>Monographie et cours d'approfondissement pour CPGE&nbsp;:</strong> Conception et enseignement d'un cours approfondi intitulé <em>«&nbsp;Les symétries en physique, compléments de cours en CPGE&nbsp;»</em> à destination des étudiants de classes préparatoires (notamment LLG MPSI/MP* et PCSI/PC).
-          &bull; [<a href="https://laurentschoeffel.github.io/papers/CPGE-groupes.pdf" target="_blank" rel="noopener noreferrer">Monographie PDF (188 p.)</a>]
-          <div class="pub-desc">
-            Monographie de 188 pages articulant mécanique hamiltonienne, groupes de Lie (SO(3), SU(2), Lorentz, Poincaré) et représentations pour montrer comment les symétries dictent le spectre des particules élémentaires.
+          <strong>Monographie et cours d'approfondissement pour CPGE&nbsp;:</strong> Conception et enseignement d'un cours approfondi intitulé <em>«&nbsp;Les symétries en physique, compléments de cours en CPGE&nbsp;»</em> à destination des étudiants de classes préparatoires (orienté notamment vers les classes de PCSI/PC, en écho aux compléments MPSI/MP* du lycée Louis-le-Grand).
+          &bull; [<a href="https://laurentschoeffel.github.io/papers/CPGE-groupes.pdf" target="_blank" rel="noopener noreferrer">Monographie PDF (133 p.)</a>]
+          <div class="reading-guide">
+            <div class="reading-guide-title">Présentation &amp; Guide de lecture</div>
+            <p>
+              Conçue comme une progression autonome «&nbsp;petits pas par petits pas&nbsp;» accessible dès les classes préparatoires, cette monographie établit rigoureusement une thèse fondatrice de la physique contemporaine&nbsp;: <strong>le contenu matériel de la nature découle de sa grammaire algébrique</strong>. Loin d'imposer d'emblée un formalisme abstrait, chaque outil mathématique est bâti au fil des besoins physiques, conduisant du principe méthodologique de <em>symétrie</em> jusqu'à son horizon philosophique d'<em>harmonie</em>.
+            </p>
+            <ul>
+              <li><strong>I. Des symétries concrètes à la mécanique analytique et quantique (Sections 1 à 5)&nbsp;:</strong> Part des symétries d'un objet (triangle équilatéral) et d'une équation avant d'introduire la structure de groupe, le formalisme hamiltonien, la géométrie symplectique (<em>Sp</em>(2<em>n</em>,&nbsp;&Ropf;)) et les théorèmes de Liouville et de Noether — révélant que les constantes du mouvement sont les générateurs infinitésimaux des symétries. Le texte introduit ensuite groupes et algèbres de Lie matriciels (<em>SO</em>(<em>n</em>), <em>U</em>(<em>n</em>), <em>SU</em>(<em>n</em>)), compare localement et globalement <em>SU</em>(2) et <em>SO</em>(3), puis transpose ces principes aux opérateurs unitaires de la mécanique quantique.</li>
+              <li><strong>II. Théorie des représentations &amp; anatomie des rotations (Sections 6 à 9)&nbsp;:</strong> Déploie les piliers de la théorie des représentations de groupes et d'algèbres de Lie&nbsp;: irréductibilité («&nbsp;atomes de symétrie&nbsp;»), lemme de Schur (expliquant la dégénérescence des spectres quantiques), caractères, représentation adjointe et complexification. La méthode des opérateurs d'échelle classifie alors toutes les représentations irréductibles de <em>SO</em>(3) et <em>SU</em>(2) par le spin <em>j</em> &isin; &frac12;&Nopf;, distinguant bosons (spin entier) et fermions (spineurs demi-entiers, représentations projectives) jusqu'au théorème de Clebsch-Gordan. La <em>section 9</em> offre un approfondissement géométrique et topologique optionnel (variétés, espace tangent à l'identité, compacité, revêtement universel <em>SU</em>(2) &rarr; <em>SO</em>(3)).</li>
+              <li><strong>III. Espace-temps relativiste &amp; particules élémentaires (Sections 10 et 11)&nbsp;:</strong> Applique l'édifice à la relativité restreinte. La complexification de l'algèbre de Lorentz fournit 𝔰𝔬(1,3)<sub>&Copf;</sub> &simeq; 𝔰𝔲(2)<sub>&Copf;</sub> &oplus; 𝔰𝔲(2)<sub>&Copf;</sub> (revêtement double <em>SL</em>(2,&Copf;)), classant les champs par couples (<em>j</em><sub>1</sub>,&nbsp;<em>j</em><sub>2</sub>)&nbsp;: scalaires (0,0), spineurs de Weyl gauche (&frac12;,0) et droit (0,&frac12;), bispineur de Dirac (&frac12;,0)&oplus;(0,&frac12;) imposé par la parité, quadrivecteurs (&frac12;,&frac12;) et tenseur électromagnétique (1,0)&oplus;(0,1). L'extension au groupe de Poincaré (10 générateurs) aboutit à la classification de Wigner par les deux invariants de Casimir — masse <em>P</em><sup>2</sup> et spin via le vecteur de Pauli-Lubanski <em>W</em><sup>2</sup> — identifiant une particule élémentaire à une représentation unitaire irréductible de Poincaré.</li>
+              <li><strong>IV. Ouverture philosophique &amp; annexes techniques (Section 12 &amp; Annexe A)&nbsp;:</strong> S'achève par une méditation épistémologique reliant la pureté des structures de groupe à Platon, Heisenberg, au Logos et au <em>Château Intérieur</em> de Thérèse d'Avila, suivie d'une bibliographie thématique commentée et d'annexes complètes&nbsp;: preuves détaillées (sous-groupes de (&Ropf;,+), Lagrange, Burnside), 20 exercices de théorie des groupes, rappels sur les espaces de Hilbert et étude complète de la symétrie cachée <em>SO</em>(4) du problème de Kepler (vecteur de Runge-Lenz et atome d'hydrogène).</li>
+            </ul>
+            <p class="reading-guide-tip">
+              <strong>Conseils de parcours&nbsp;:</strong> Un repérage par couleur distingue définitions (jaune), théorèmes clés (orange) et interprétations physiques (vert), ponctué de synthèses d'étape (sections 6.4, 7.4, 8.7, 9.5 et 11.4). En première lecture orientée physique, la section 9 peut être laissée de côté pour passer directement des rotations (section 8) aux groupes de Lorentz et de Poincaré (sections 10&ndash;11).
+            </p>
           </div>
         </li>
       </ul>
